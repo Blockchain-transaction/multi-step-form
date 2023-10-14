@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="Section">
+        <div class="innerSection">
+            <div class="Steps">
+                <div class="Wrappers WrapperOne">
+                    <div class="stages stageOne">
+                        <p class="numOne">1</p>
+                    </div>
+                    <div class="Info">
+                        <div class="stepNum">
+                            <p>STEP 1</p>
+                        </div>
+                        <div class="stepInfo">
+                            <p>YOUR INFO</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Wrappers WrapperTwo">
+                    <div class=" stages stageTwo">
+                        <p class="numTwo">2</p>
+                    </div>
+                    <div class="Info">
+                        <div class="stepNum">
+                            <p>STEP 2</p>
+                        </div>
+                        <div class="stepInfo">SELECT PLAN</div>
+                    </div>
+                </div>
+
+                <div class="Wrappers WrapperThree">
+                    <div class="stages stageThree">
+                        <p class="numThree">3</p>
+                    </div>
+                    <div class="Info">
+                        <div class="stepNum">
+                            <p>STEP 3</p>
+                        </div>
+                        <div class="stepInfo">ADD-ONS</div>
+                    </div>
+                </div>
+
+                <div class="Wrappers WrapperFour">
+                    <div class="stages stageFour">
+                        <p class="numFour">4</p>
+                    </div>
+                    <div class="Info">
+                        <div class="stepNum">
+                            <p>STEP 4</p>
+                        </div>
+                        <div class="stepInfo">
+                            <p>SUMMARY</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="Form">
+                <div class="InfoForm-Wrapper">
+                    <div class="personalInfo">
+                        <div>
+                            <h3 class="PageTopic">Personal info</h3>
+                        </div>
+                        <div>
+                            <p class="PageSubTopic">Please provide your name, email address and phone number</p>
+                        </div>
+                    </div>
+
+                    <div class="infoForm">
+                        <div>
+                            <div class="label-and-errorMessaage">
+                                <label for="name" class="name">Name</label>
+                                <p class="errorMessageOne">This field is required</p>
+                            </div>
+                            <input class="nameInput " type="text" placeholder="e.g Stephen King">
+                        </div>
+
+                        <div>
+                            <div class="label-and-errorMessaage">
+                                <label for="Email address">Email Address</label>
+                                <p class="errorMessageTwo">This field is required</p>
+                            </div>
+                            <input class="emailInput input" type="email" placeholder="e.g stephenLorem@Lorem.com" />
+                        </div>
+
+                        <div>
+                            <div class="label-and-errorMessaage">
+                                <label for="phone number">Phone Number</label>
+                                <p class="errorMessageThree">This field is required</p>
+                            </div>
+                            <input class="phoneInput input" type="number" placeholder="e.g +1 234 567 890">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <button class="btn" onclick="Color()"> Next Step </button>
+                </div>
+            </div>
+
+            <!-- ///////////////////////////////////SECOND PAGE HTML ///////////////////// -->
+
+            <div class="SecondForm">
+                <div class="SecondForm-Wrapper">
+                    <div class="SecondForm-FirstWrapper">
+                        <div class="SelectPlan">
+                            <div>
+                                <h3>Select Your Plan</h3>
+                            </div>
+                            <div>
+                                <p>You have the Option of monthly or yearly billing</p>
+                            </div>
+                        </div>
+
+                        <div class="AllplanTypes">
+                            <div class="FirstPlanType Plantype " onclick="ArcadeplanSelection(arcadeID.id)">
+                                <div>
+                                    <img class="plan-Image" src="images/icon-arcade.svg" alt="">
+                                </div>
+                                <div>
+                                    <div class="ArcadeSelection">
+                                        <p class="Arcade planLevel">Arcade</p>
+                                    </div>
+                                    <div>
+                                        <p class="All-Ammount Arcade-Ammount">$9/mo</p>
+                                    </div>
+                                    <div>
+                                        <p class="Advanced-duration duratn">2 months free</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="SecondPlanType Plantype" onclick="AdvancedplanSelection(advancedID.id)">
+                                <div>
+                                    <img class="plan-Image" src="images/icon-advanced.svg" alt="">
+                                </div>
+                                <div>
+                                    <div class="AdvancedSelection">
+                                        <p class="Advanced planLevel">Advanced</p>
+                                    </div>
+                                    <div>
+                                        <p class="All-Ammount Advanced-Ammount">$12/mo</p>
+                                    </div>
+                                    <div>
+                                        <p class="Advanced-duration duratn">2 months free</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ThirdPlanType Plantype" onclick="ProplanSelection(proID.id)">
+                                <div>
+                                    <img class="plan-Image" src="images/icon-pro.svg" alt="">
+                                </div>
+                                <div>
+                                    <div class="ProSelection">
+                                        <p class="Pro planLevel">Pro</p>
+                                    </div>
+                                    <div>
+                                        <p class="All-Ammount Pro-Ammount">$15/mo</p>
+                                    </div>
+                                    <div>
+                                        <p class="Advanced-duration duratn">2 months free</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="Duration">
+                            <div class="innerDiv-Duration">
+                                <div class="monthly all-duration">
+                                    <p>Monthly</p>
+                                </div>
+                                <div class="toggle">
+                                    <toggle class="monthlyToggle all-toggles" onclick="ToggleOne()"></toggle>
+                                    <toggle class="yearlyToggle all-toggles" onclick="ToggleTwo()"></toggle>
+                                </div>
+                                <div class="yearly all-duration">
+                                    <p>Yearly</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="FormTwo-Buttons">
+                        <div class="second-page-btn">
+                            <button>Go Back</button>
+                        </div>
+                        <div class="second-page-btn btn">
+                            <button class="SecondFormBTN" onclick="SecondFormNextBtn()">Next Step</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //////////////////////////////////////////THIRD PAGE HTML ////////////////// -->
+            <div class="ThirdForm">
+                <div class="InnerThirdForm">
+                    <div class="Add-ons">
+                        <div class="Pick-Add-Ons">
+                            <div>
+                                <h3>Pick Add-Ons</h3>
+                            </div>
+                            <div>
+                                <p>Add-Ons help enhance your gaming experience</p>
+                            </div>
+                        </div>
+
+                        <div class="addOn-Options">
+                            <div class="First-addOn allAdon">
+                                <div class="CheckBox-OnlineService allCheck">
+                                    <input type="checkbox" onclick="PickAddonOne(firstAddOnArr.id)">
+                                </div>
+                                <div class="Description-OnlineService addOnDesc">
+                                    <div class="OnlineService">
+                                        <p>Online Service</p>
+                                    </div>
+                                    <div class="Description">
+                                        <p>Access to Multiple games</p>
+                                    </div>
+                                </div>
+                                <div class="Ammount-OnlineService allAdns-Ammount">
+                                    <p>+$1/mo</p>
+                                </div>
+                            </div>
+                            <div class="Second-addOn allAdon">
+                                <div class="CheckBox-OnlineService allCheck">
+                                    <input onclick="PickAddonTwo(secondAddOnArr.id)" type="checkbox">
+                                </div>
+                                <div class="Description-OnlineService addOnDesc">
+                                    <div class="OnlineService">
+                                        <p>Larger Storage</p>
+                                    </div>
+                                    <div class="Description">
+                                        <p>Extra 1TB of cloud save </p>
+                                    </div>
+                                </div>
+                                <div class="Ammount-LargerStorge allAdns-Ammount">
+                                    <p>+$2/mo</p>
+                                </div>
+                            </div>
+                            <div class="Third-addOn allAdon">
+                                <div class="CheckBox-OnlineService allCheck">
+                                    <input type="checkbox" onclick="PickAddonThree(thirdAddOnArr.id)">
+                                </div>
+                                <div class="Description-OnlineService addOnDesc">
+                                    <div class="OnlineService">
+                                        <p>Customizable Profile</p>
+                                    </div>
+                                    <div class="Description">
+                                        <p>Custom theme on your profile</p>
+                                    </div>
+                                </div>
+                                <div class="Ammount-CustomizableProfile allAdns-Ammount">
+                                    <p>+$2/mo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="FormThree-Buttons">
+                        <div class="third-page-btn">
+                            <button class="ThirdBtn-Bck">Go Back</button>
+                        </div>
+                        <div class="third-page-btn">
+                            <button class="ThirdBtn-Nxt" onclick="ThirdBtnNXT()">Next Step</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //////////////////////////// Fourth Form/////////////////////////// -->
+
+            <div class="FourthForm">
+                <div class="FourthForm-Wrapper">
+                    <div class="SummarySection">
+                        <div class="Summary">
+                            <div>
+                                <h3>Summary</h3>
+                            </div>
+                            <div>
+                                <p>Double check everything looks OK before confirming.</p>
+                            </div>
+                        </div>
+                        <div class="SummaryDetails-And-TotalAmmount">
+                            <div class="SummaryDetails">
+                                <div class="Summary-Plan">
+                                    <div class="SumPlanSelected">
+                                        <p class="sumplan">Arcade <span class="span">(Monthly)</span> </p>
+                                        <p class="SummaryChange">Change</p>
+                                    </div>
+                                    <div class="SummaryAmmount">
+                                        <p>$9/mo</p>
+                                    </div>
+                                </div>
+                                <div class="Summary-Addons">
+                                    <div class="AddonsSelected">
+                                        <p class="sumAddon"> </p>
+                                        <p class="sumAddonAmmount"> </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="TotalAmmount">
+                                <p class="Totl">Total (per month)</p>
+                                <p class="ammount-Totl">+$12/mo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+
+
+</html>
